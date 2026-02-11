@@ -1,0 +1,25 @@
+---
+description: Keep project structure, sizing, and layout identical when making changes
+alwaysApply: true
+---
+
+# Preserve Project Identity
+
+When making any change (content, images, copy, assets), the project must remain **identical** in structure, size, and behavior.
+
+## Do
+
+- **Preserve layout and dimensions**: Section order, grid, breakpoints, spacing, and component structure stay the same.
+- **Fix side effects**: If a change causes visual or layout differences (e.g. one card/section bigger than others, different image aspect ratios), fix it in the same pass—don’t leave it for the user to report.
+- **Match existing patterns**: Use the same CSS (fixed height, object-fit, etc.) so all similar items (e.g. service cards) look and size the same.
+- **Verify**: After edits, confirm no accidental changes to dimensions, wrappers, or responsive behavior; run build if relevant.
+
+## Don’t
+
+- Change structure, section count, or component hierarchy unless explicitly requested.
+- Leave one instance (e.g. one service card) with different size or behavior than its siblings.
+- Rely on “min-height only” or unconstrained sizing when that can make one item grow differently—use fixed heights or equivalent constraints so items stay uniform.
+
+## Example
+
+Swapping an image: update the path only; if the new asset has different dimensions, add or adjust CSS (e.g. fixed height + `object-fit: cover`) so the element looks the same as before and matches sibling elements.

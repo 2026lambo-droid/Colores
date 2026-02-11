@@ -1,0 +1,204 @@
+/*--------------------------------------------------------------
+  10. Hero
+----------------------------------------------------------------*/
+.cs_circle_group {
+  display: flex;
+  padding-left: 10px;
+  span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--white-color);
+    margin-left: -10px;
+    &:first-child {
+      transition: all 0.65s ease;
+    }
+    &:last-child {
+      transition: all 0.45s ease;
+    }
+  }
+}
+.cs_hero.cs_style_1 {
+  position: relative;
+  /* Dark overlay so hero text stays readable on bright/detailed images */
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2; /* below content (.container z-index: 3), above background */
+    pointer-events: none;
+    background: linear-gradient(
+      120deg,
+      rgba(0, 0, 0, 0.70) 0%,
+      rgba(0, 0, 0, 0.55) 30%,
+      rgba(0, 0, 0, 0.40) 60%,
+      rgba(0, 0, 0, 0.75) 100%
+    );
+  }
+  .cs_hero_in {
+    min-height: 780px;
+    padding: 150px 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .cs_hero_title {
+    b {
+      font-weight: 600;
+    }
+  }
+  .cs_hero_subtitle {
+    max-width: 770px;
+    color: var(--white-color);
+    opacity: 0.9;
+    @media (max-width: 1400px) {
+      max-width: 690px;
+    }
+    @media (max-width: 1400px) {
+      max-width: 620px;
+    }
+  }
+  /* Hero intro: design-agency flow — 8px rhythm, clear hierarchy */
+  .cs_hero_intro {
+    max-width: 36em;
+    color: var(--white-color);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    opacity: 0.94;
+  }
+  .cs_hero_intro_lead {
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    margin: 0 0 1.5rem 0;
+    letter-spacing: 0.015em;
+    font-weight: 400;
+  }
+  .cs_hero_intro_label {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin: 0 0 0.5rem 0;
+    opacity: 0.88;
+  }
+  .cs_hero_intro_services {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0 0.25rem;
+    margin: 0 0 1.5rem 0;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    .cs_hero_intro_service_item {
+      &::after {
+        content: " · ";
+        margin-left: 0.25rem;
+        opacity: 0.7;
+        font-weight: 300;
+      }
+      &:last-child::after {
+        display: none;
+      }
+    }
+  }
+  .cs_hero_intro_closing {
+    font-size: 1.0625rem;
+    line-height: 1.62;
+    margin: 0;
+    letter-spacing: 0.015em;
+    font-weight: 400;
+  }
+  .cs_hero_text {
+    max-width: 1020px;
+    position: relative;
+    z-index: 2;
+    @media (max-width: 1400px) {
+      max-width: 750px;
+    }
+  }
+  .cs_hero_btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+    align-items: center;
+  }
+  .cs_hero_funfact_wrap {
+    border-radius: 20px;
+    position: absolute;
+    top: 166px;
+    right: 0;
+    overflow: hidden;
+    padding: 1px;
+    @media (max-width: 991px) {
+      display: none;
+    }
+    &:hover {
+      .cs_circle_group {
+        span {
+          &:first-child {
+            transform: translateX(60px);
+          }
+          &:last-child {
+            transform: translateX(-60px);
+          }
+        }
+      }
+    }
+  }
+  .cs_hero_funfact {
+    border-radius: inherit;
+    padding: 24px 16px;
+    box-shadow: -2px 0px 7px 0px rgb(255 255 255 / 50%);
+  }
+  .cs_hero_box {
+    padding: 24px;
+    position: absolute;
+    bottom: 64px;
+    right: 0;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: linear-gradient(
+      241deg,
+      rgba(255, 255, 255, 0.5) -7.37%,
+      rgba(255, 255, 255, 0.1) 89.52%
+    );
+    backdrop-filter: blur(5px);
+    width: 410px;
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  .cs_hero_box_btn {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+  }
+  .container {
+    position: relative;
+    z-index: 3;
+  }
+  .cs_hero_bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    .cs_slider,
+    .cs_slider_container,
+    .cs_slider_wrapper,
+    .slick-list,
+    .slick-track,
+    .slick-track * {
+      height: 100%;
+    }
+  }
+  .cs_slide {
+    height: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
