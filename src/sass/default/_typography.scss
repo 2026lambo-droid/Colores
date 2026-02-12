@@ -9,10 +9,13 @@ html {
   font-size: 16px;
   line-height: 1.5em;
   font-weight: 400;
-  overflow-x: clip;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 body {
   overscroll-behavior: none;
+  position: relative;
+  width: 100%;
 }
 h1,
 h2,

@@ -42,6 +42,18 @@
     width: 100%;
     display: flex;
     align-items: center;
+    @media (max-width: 991px) {
+      min-height: 560px;
+      padding: 100px 0 80px;
+    }
+    @media (max-width: 767px) {
+      min-height: 480px;
+      padding: 90px 0 60px;
+    }
+    @media (max-width: 575px) {
+      min-height: 420px;
+      padding: 80px 16px 48px;
+    }
   }
   .cs_hero_title {
     b {
@@ -115,6 +127,9 @@
     z-index: 2;
     @media (max-width: 1400px) {
       max-width: 750px;
+    }
+    @media (max-width: 575px) {
+      padding: 0 4px;
     }
   }
   .cs_hero_btns {
