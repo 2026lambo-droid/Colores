@@ -7,7 +7,7 @@ import ServicesSection from "../../Components/ServicesSection";
 import TestimonialSection from "../../Components/TestimonialSection";
 import WorksSection from "../../Components/WorksSection";
 import CTASection from "../../Components/CTASection";
-import { pageTitle } from "../../helper";
+import { pageTitle, assetUrl } from "../../helper";
 
 const heroData = {
   title: 'Welcome to <b>Colores Tree Service</b>',
@@ -44,10 +44,10 @@ const heroData = {
   },
 
   backgrounds: [
-    "/assets/img/tree/hero-trimming.jpg",
-    "/assets/img/tree/hero-removal.jpg",
-    "/assets/img/tree/hero-stump.jpg",
-    "/assets/img/tree/hero-equipment.jpg",
+    assetUrl("assets/img/tree/hero-trimming.jpg"),
+    assetUrl("assets/img/tree/hero-removal.jpg"),
+    assetUrl("assets/img/tree/hero-stump.jpg"),
+    assetUrl("assets/img/tree/hero-equipment.jpg"),
   ],
   intro: {
     intro:
@@ -81,7 +81,7 @@ const featureData = {
   sectionTitle: "WHY CHOOSE <span>COLORES TREE SERVICE</span>",
   buttonText: "Free Estimate",
   buttonUrl: "/contact",
-  image: "/assets/img/tree/feature-about.jpg",
+  image: assetUrl("assets/img/tree/feature-about.jpg"),
   features: [
     {
       icon: "fa6-solid:certificate",
@@ -146,7 +146,7 @@ const servicesData = {
       title: "TREE TRIMMING",
       subtitle:
         "Trees require regular trimming to stay healthy. We shape and prune while removing dead or overgrown branches, and we clean up fallen branches and leaves when we're done—leaving your yard pristine.",
-      image: "/assets/img/tree/service-tree-services.png",
+      image: assetUrl("assets/img/tree/service-tree-services.png"),
       link: "/services/tree-trimming",
       tags: [
         { label: "Trimming", url: "/" },
@@ -159,7 +159,7 @@ const servicesData = {
       title: "TREE REMOVAL",
       subtitle:
         "Complete tree removal to haul away problem trees, roots and all. When trimming isn't enough, we remove trees down to the stump. We also offer trunk grinding services.",
-      image: "/assets/img/tree/service-removal.jpg",
+      image: assetUrl("assets/img/tree/service-removal.jpg"),
       link: "/services/tree-removal",
       tags: [
         { label: "Removal", url: "/" },
@@ -172,7 +172,7 @@ const servicesData = {
       title: "TREE SERVICES",
       subtitle:
         "Trees are an essential feature of your outdoor space, so regular maintenance matters. Trimming removes dead or rotten branches to keep trees healthy and help prevent damage or injury. We also offer fence installations and landscaping services.",
-      image: "/assets/img/tree/service-trimming.png",
+      image: assetUrl("assets/img/tree/service-trimming.png"),
       link: "/services/trunk-grinding-services",
       tags: [
         { label: "Grinding", url: "/" },
@@ -185,7 +185,7 @@ const servicesData = {
       title: "TURF INSTALLATION",
       subtitle:
         "We transform ordinary yards into lush, green landscapes through expert turf installation. We help select the best turf for your area and install it with a meticulous process for a healthy, vibrant lawn.",
-      image: "/assets/img/tree/service-turf.png",
+      image: assetUrl("assets/img/tree/service-turf.png"),
       link: "/services/turf-installation",
       tags: [
         { label: "Storm", url: "/" },
@@ -223,14 +223,14 @@ const worksData = {
   subtitle: "RECENT WORK",
   slides: [
     {
-      image: "/assets/img/tree/project-removal.jpg",
+      image: assetUrl("assets/img/tree/project-removal.jpg"),
       name: "HAZARD TREE REMOVAL",
       location: "Residential",
       description:
         "Safe removal of a hazardous tree near the home using professional rigging techniques, followed by full debris haul-away and cleanup.",
     },
     {
-      image: "/assets/img/tree/project-structural-pruning.jpg",
+      image: assetUrl("assets/img/tree/project-structural-pruning.jpg"),
       name: "STRUCTURAL PRUNING",
       location: "SANTA CLARA, CA",
       description:
@@ -239,7 +239,7 @@ const worksData = {
       backgroundSize: "130%",
     },
     {
-      image: "/assets/img/tree/project-stump.jpg",
+      image: assetUrl("assets/img/tree/project-stump.jpg"),
       name: "STUMP GRIND + RESTORE",
       location: "CAMPBELL, CA",
       description:
@@ -249,7 +249,7 @@ const worksData = {
 };
 
 const ctaData = {
-  backgroundImage: "/assets/img/tree/cta-bg.jpg",
+  backgroundImage: assetUrl("assets/img/tree/cta-bg.jpg"),
   title: "NEED PROFESSIONAL <br /> TREE SERVICE?",
   buttonText: "Get Free Estimate",
   buttonUrl: "/contact",

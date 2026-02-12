@@ -170,11 +170,16 @@ export default function HeroSection({ data }) {
             >
               {data.backgrounds.map((src, index) => (
                 <SwiperSlide key={index}>
-                  <div className="cs_slide">
+                  <div
+                    className="cs_slide cs_bg_filed"
+                    style={{ backgroundImage: `url(${src})` }}
+                  >
                     <img
                       className="cs_hero_bg_in"
                       src={src}
                       alt=""
+                      loading="eager"
+                      decoding="async"
                     />
                   </div>
                 </SwiperSlide>
