@@ -25,10 +25,10 @@ const data = {
     {
       title: "SERVICES",
       links: [
-        { label: "TREE TRIMMING", url: "/services/services-details" },
-        { label: "TREE REMOVAL", url: "/services/services-details" },
-        { label: "TREE SERVICES", url: "/services/services-details" },
-        { label: "TURF INSTALLATION", url: "/services/services-details" },
+        { label: "TREE TRIMMING", url: "/services/tree-trimming" },
+        { label: "TREE REMOVAL", url: "/services/tree-removal" },
+        { label: "TREE SERVICES", url: "/services/tree-service" },
+        { label: "TURF INSTALLATION", url: "/services/turf-installation" },
       ],
     },
   ],

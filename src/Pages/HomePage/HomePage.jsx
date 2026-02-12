@@ -147,7 +147,7 @@ const servicesData = {
       subtitle:
         "Trees require regular trimming to stay healthy. We shape and prune while removing dead or overgrown branches, and we clean up fallen branches and leaves when we're done—leaving your yard pristine.",
       image: "/assets/img/tree/service-tree-services.png",
-      link: "services/tree-trimming",
+      link: "/services/tree-trimming",
       tags: [
         { label: "Trimming", url: "/" },
         { label: "Pruning", url: "/" },
@@ -160,7 +160,7 @@ const servicesData = {
       subtitle:
         "Complete tree removal to haul away problem trees, roots and all. When trimming isn't enough, we remove trees down to the stump. We also offer trunk grinding services.",
       image: "/assets/img/tree/service-removal.jpg",
-      link: "services/tree-removal",
+      link: "/services/tree-removal",
       tags: [
         { label: "Removal", url: "/" },
         { label: "Hazard Trees", url: "/" },
@@ -173,7 +173,7 @@ const servicesData = {
       subtitle:
         "Trees are an essential feature of your outdoor space, so regular maintenance matters. Trimming removes dead or rotten branches to keep trees healthy and help prevent damage or injury. We also offer fence installations and landscaping services.",
       image: "/assets/img/tree/service-trimming.png",
-      link: "services/stump-grinding",
+      link: "/services/trunk-grinding-services",
       tags: [
         { label: "Grinding", url: "/" },
         { label: "Debris Removal", url: "/" },
@@ -186,7 +186,7 @@ const servicesData = {
       subtitle:
         "We transform ordinary yards into lush, green landscapes through expert turf installation. We help select the best turf for your area and install it with a meticulous process for a healthy, vibrant lawn.",
       image: "/assets/img/tree/service-turf.png",
-      link: "services/emergency-cleanup",
+      link: "/services/turf-installation",
       tags: [
         { label: "Storm", url: "/" },
         { label: "Emergency", url: "/" },

@@ -74,28 +74,28 @@ const accordionData = {
       title: "TREE TRIMMING",
       description:
         "Professional trimming and pruning to improve tree health, safety, and appearance. Crown cleaning, thinning, shaping, and clearance pruning.",
-      link: "/services/services-details",
+      link: "/services/tree-trimming",
     },
     {
       img: "/assets/img/tree/service-removal.jpg",
       title: "TREE REMOVAL",
       description:
         "Safe removals for hazardous, dead, or unwanted trees. From tight spaces to large removals—done with safety and care.",
-      link: "/services/services-details",
+      link: "/services/tree-removal",
     },
     {
       img: "/assets/img/tree/service-emergency.jpg",
       title: "EMERGENCY CLEANUP",
       description:
         "Storm damage cleanup, fallen limbs, and urgent hazard situations. Fast response when you need us.",
-      link: "/services/services-details",
+      link: "/services/tree-cleaning",
     },
     {
       img: "/assets/img/tree/service-stump.jpg",
       title: "STUMP GRINDING",
       description:
         "Stump grinding below ground level with debris cleanup so you can replant, landscape, or reclaim your yard space.",
-      link: "/services/services-details",
+      link: "/services/trunk-grinding-services",
     },
   ],
 };
