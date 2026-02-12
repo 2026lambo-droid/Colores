@@ -1180,7 +1180,9 @@ hr {
 @media (max-width: 575px) {
   .cs_hero_text img,
   .cs_card_info img,
-  p img {
+  .cs_post img,
+  p img,
+  .cs_accordian_body img {
     max-width: 100%;
     height: auto;
   }

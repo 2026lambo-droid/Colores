@@ -76,4 +76,37 @@
   .cs_accordians.cs_style_1 .cs_accordian_head {
     padding: 12px 20px 12px 0;
   }
+
+  /* ===== Universal mobile image display ===== */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  /* Preserve object-fit in fixed-height containers */
+  .cs_card_thumb img,
+  .cs_card.cs_style_4 .cs_card_thumb img,
+  .cs_post_thumb img,
+  .cs_gallery img,
+  .cs_testimonial_avatar img,
+  .cs_team_thumb img,
+  .cs_recent_post_thumb_in img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  /* Background-image sections: ensure they display properly */
+  .cs_page_heading,
+  .cs_hero .cs_hero_bg .cs_slide,
+  .cs_cta.cs_style_1,
+  .cs_cta.cs_style_2,
+  .cs_card.cs_style_1,
+  .cs_card.cs_style_6,
+  .cs_video_block.cs_bg_filed,
+  .cs_gallery_item.cs_bg_filed {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
