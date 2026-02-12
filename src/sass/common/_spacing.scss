@@ -46,3 +46,16 @@
   }
 }
 
+/* Mobile only (768px): compact vertical rhythm, no dead space */
+@media screen and (max-width: 768px) {
+  @for $i from 1 through 150 {
+    .cs_height_lg_#{$i} {
+      @if $i > 20 {
+        height: 20px;
+      } @else {
+        height: $i + px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,79 @@
+/*--------------------------------------------------------------
+  Mobile-only vertical spacing (max-width: 768px)
+  Overrides excessive padding/margins to remove dead space.
+  Desktop and tablet breakpoints unchanged.
+----------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  /* Hero: compact so content doesn't sit too far down */
+  .cs_hero.cs_style_1 .cs_hero_in {
+    min-height: 380px;
+    padding: 56px 12px 40px;
+  }
+
+  /* Page heading (banner) sections */
+  .cs_page_heading.cs_style_1 {
+    min-height: 220px;
+    padding: 56px 0 20px;
+  }
+
+  /* Section container padding */
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* Card section (e.g. project details) large padding */
+  .cs_card.cs_style_6 {
+    padding: 48px 0;
+  }
+
+  /* CTA section height */
+  .cs_cta.cs_style_2 {
+    height: 240px;
+    padding: 20px 16px;
+    &.cs_type_1 {
+      min-height: 280px;
+    }
+  }
+
+  /* Footer main padding */
+  .cs_footer.cs_style_1 .cs_footer_row,
+  .cs_footer .cs_footer_row {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .cs_bottom_footer {
+    padding: 12px 0;
+  }
+  .cs_footer_widget + .cs_footer_widget {
+    margin-top: 20px;
+  }
+
+  /* Section heading gaps below title */
+  .cs_section_heading {
+    margin-bottom: 8px;
+  }
+
+  /* Service/card blocks that use fixed heights on mobile */
+  .cs_card_1_group .cs_card.cs_style_1 {
+    height: 300px;
+    min-height: 280px;
+    padding: 20px 14px;
+  }
+
+  /* Works section card thumb */
+  .cs_card.cs_style_4 .cs_card_thumb {
+    height: 260px;
+  }
+
+  /* Info section / project thumb zoom */
+  .cs_card.cs_style_5 .cs_card_thumb.cs_card_thumb_zoom {
+    height: 260px;
+    min-height: 260px;
+  }
+
+  /* Accordion section spacing */
+  .cs_accordians.cs_style_1 .cs_accordian_head {
+    padding: 12px 20px 12px 0;
+  }
+}
