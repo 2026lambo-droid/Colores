@@ -42,12 +42,14 @@
     padding: 12px 20px 12px 0;
   }
 
-  /* ===== Mobile image display (template-like: no overflow, correct crop) ===== */
+  /* ===== Mobile image display: prevent collapse, ensure visibility ===== */
   img {
     max-width: 100%;
     height: auto;
     display: block;
   }
+  /* Force fill in fixed-height containers (hero, cards, gallery, etc.) so images always show */
+  .cs_hero_bg .cs_slide img,
   .cs_card_thumb img,
   .cs_card.cs_style_4 .cs_card_thumb img,
   .cs_post_thumb img,
@@ -60,16 +62,26 @@
     object-fit: cover;
     object-position: center;
   }
+  /* Background-image sections: always paint and fill on mobile */
   .cs_page_heading,
   .cs_hero .cs_hero_bg .cs_slide,
   .cs_cta.cs_style_1,
   .cs_cta.cs_style_2,
   .cs_card.cs_style_1,
   .cs_card.cs_style_6,
+  .cs_card.cs_style_4 .cs_card_thumb,
   .cs_video_block.cs_bg_filed,
   .cs_gallery_item.cs_bg_filed {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
+  /* Prevent hero/slider and card thumbs from collapsing so backgrounds and imgs show */
+  .cs_hero.cs_style_1 .cs_hero_bg .swiper-slide,
+  .cs_hero.cs_style_1 .cs_hero_bg .cs_slide {
+    min-height: 280px;
+  }
+  .cs_card.cs_style_4 .cs_card_thumb {
+    min-height: 240px;
   }
 }

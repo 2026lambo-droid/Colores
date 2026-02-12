@@ -222,4 +222,19 @@
       display: block;
     }
   }
+  /* Mobile: ensure hero bg and slides have height so images always render */
+  @media (max-width: 991px) {
+    .cs_hero_bg .cs_slider_wrapper,
+    .cs_hero_bg .swiper-wrapper,
+    .cs_hero_bg .swiper-slide {
+      min-height: 320px;
+    }
+  }
+  @media (max-width: 575px) {
+    .cs_hero_bg .cs_slider_wrapper,
+    .cs_hero_bg .swiper-wrapper,
+    .cs_hero_bg .swiper-slide {
+      min-height: 280px;
+    }
+  }
 }
