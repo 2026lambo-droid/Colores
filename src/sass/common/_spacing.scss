@@ -24,17 +24,25 @@
   @for $i from 1 through 150 {
     .cs_height_lg_#{$i} {
       $h: $i + px;
-      height: if($i > 50, 50px, $h);
+      @if $i > 50 {
+        height: 50px;
+      } @else {
+        height: $h;
+      }
     }
   }
 }
 
-/* Small mobile: tighter spacing to reduce unused vertical space */
+/* Small mobile: tighter spacing */
 @media screen and (max-width: 575px) {
   @for $i from 1 through 150 {
     .cs_height_lg_#{$i} {
-      $reduced: if($i > 12, max(16, round($i * 0.4)), $i);
-      height: $reduced + px;
+      @if $i > 12 {
+        height: max(16px, round($i * 0.4) * 1px);
+      } @else {
+        height: $i + px;
+      }
     }
   }
 }
+

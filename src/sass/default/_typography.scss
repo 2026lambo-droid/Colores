@@ -3,9 +3,7 @@
 ----------------------------------------------------------------*/
 html {
   overflow-x: hidden;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
+  /* Do not set overflow-y on html - let document scroll natively for trackpad */
 }
 body,
 html {
@@ -18,10 +16,14 @@ html {
 }
 body {
   overflow-x: hidden;
-  overflow-y: auto;
-  min-height: 100%;
+  /* No overflow-y so viewport scrolls natively (fixes trackpad) */
   position: relative;
   width: 100%;
+  min-height: 100vh;
+}
+#root {
+  min-height: 100%;
+  display: block;
 }
 h1,
 h2,
