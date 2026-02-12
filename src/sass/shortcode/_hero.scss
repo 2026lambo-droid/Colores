@@ -202,6 +202,8 @@
     .cs_slider,
     .cs_slider_container,
     .cs_slider_wrapper,
+    .swiper-wrapper,
+    .swiper-slide,
     .slick-list,
     .slick-track,
     .slick-track * {
@@ -210,10 +212,14 @@
   }
   .cs_slide {
     height: 100%;
+    position: relative;
+    overflow: hidden;
     img {
       height: 100%;
       width: 100%;
       object-fit: cover;
+      object-position: center;
+      display: block;
     }
   }
 }

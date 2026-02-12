@@ -14,7 +14,7 @@
   }
 }
 
-/* Tablet/mobile: slightly reduced section spacing */
+/* Tablet/mobile: reduced section spacer heights to match template */
 @media screen and (max-width: 991px) {
   @for $i from 1 through 60 {
     .cs_mb_lg_#{$i} {
@@ -23,38 +23,7 @@
   }
   @for $i from 1 through 150 {
     .cs_height_lg_#{$i} {
-      $h: $i + px;
-      @if $i > 50 {
-        height: 50px;
-      } @else {
-        height: $h;
-      }
-    }
-  }
-}
-
-/* Small mobile: tighter spacing */
-@media screen and (max-width: 575px) {
-  @for $i from 1 through 150 {
-    .cs_height_lg_#{$i} {
-      @if $i > 12 {
-        height: max(16px, round($i * 0.4) * 1px);
-      } @else {
-        height: $i + px;
-      }
-    }
-  }
-}
-
-/* Mobile only (768px): compact vertical rhythm, no dead space */
-@media screen and (max-width: 768px) {
-  @for $i from 1 through 150 {
-    .cs_height_lg_#{$i} {
-      @if $i > 20 {
-        height: 20px;
-      } @else {
-        height: $i + px;
-      }
+      height: $i + px;
     }
   }
 }

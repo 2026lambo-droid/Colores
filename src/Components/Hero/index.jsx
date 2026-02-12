@@ -172,18 +172,9 @@ export default function HeroSection({ data }) {
                 <SwiperSlide key={index}>
                   <div className="cs_slide">
                     <img
-                      className="cs_hero_bg_in cs_bg_filed"
+                      className="cs_hero_bg_in"
                       src={src}
                       alt=""
-                      style={{
-                        width: "100%",
-                        objectFit: "cover",
-                        objectPosition: "center",
-                        position: "absolute",
-                        top: 0,
-                        left: 0,
-                        zIndex: -1,
-                      }}
                     />
                   </div>
                 </SwiperSlide>
